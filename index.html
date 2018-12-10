@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="script.js"></script>
+	<title>	</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> 
+</head>
+<body>
+	<section id="mainSection">
+	<div>
+		<img id="image" src="_images/mask2.jpg">
+	</div>
+	<h1>Sign Up</h1>
+	<h3>Your Basic Info</h3>
+		<form onsubmit="return checkName()" class="firstForm" action="thanks.html" method="post">
+			<ul>
+				<li>
+					<label>Name:<span class="red">*</span></label><br>
+					<input oninput="removeBorder()" id="firstField" class="inputBoxes" type="text" name="name" placeholder="Full Name">
+				</li>
+				<li>
+					<label>Email:<span class="red">*</span></label><br>
+					<input oninput="removeBorder()" id="firstField2" class="inputBoxes" type="text" name="email" placeholder="Email">
+				</li>
+				<li>
+					<label>Password:<span class="red">*</span></label><br>
+					<input oninput="removeBorder()" id="firstField3" class="inputBoxes"type="text" name="password" placeholder="Enter Password">
+				</li>
+				<li>
+					<label>Sheridan college student?</label><br>
+					<input type="radio" name="yes"><span class="interestLabel">Yes</span><br>
+					<input type="radio" name="no"><span class="interestLabel">No</span><br>
+				</li>
+			</ul>
+		</form>
+
+			<h3 class="secondHeader">Your Profile</h3>
+			
+			<form class="secondForm" action="thanks.html" method="GET">
+				<ul>
+					<li>
+						<label>Biography:</label><br>
+						<textarea id="textArea"></textarea>
+					</li>
+					<li>
+						<label>Job Role:</label><br>
+							<select id="jobRole" class="inputBoxes">
+								<option>Front-End Developer</option>
+								<option>Back-End PHP Developer</option>
+								<option>Python Developer</option>
+							<option>Web Designer</option>
+							<option>WordPress Developer</option>
+						</select>
+					</li>
+					<li>
+						<label>Interests:</label><br>
+						<input type="checkbox" name="development"><span class="interestLabel">Development</span><br>
+						<input type="checkbox" name="design"><span class="interestLabel">Design</span><br>
+						<input type="checkbox" name="business"><span class="interestLabel">Business</span><br>
+					</li>
+					<li>
+						<button type="button" onclick="myFunction()">Sign Up</button>
+					</li>
+				</ul>
+			</form>
+	</section>
+</body>
+</html>
